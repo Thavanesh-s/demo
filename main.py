@@ -3,36 +3,35 @@
 print("welcome to our super market")
 
 import sys
-while True :
- name = input("Enter your name (without initial): ")
- user_name = name.isalpha()
- length = len(name)
 
- if user_name:
-    break
- else:
-    print("Name cannot contain numbers enter again.(without initial)")
-    continue
+while True:
+    name = input("Enter your name (without initial): ")
+    user_name = name.isalpha()
+    length = len(name)
+
+    if user_name:
+        break
+    else:
+        print("Name cannot contain numbers enter again.(without initial)")
+        continue
 if length >= 3:
     pass
 else:
     print("your name is lesser than three letters re run and try again.QUITTING..... ")
     sys.exit()
 
-
-
 # asking user age
 
 while True:
- age = input("enter your age: ")
- user_age = age.isdigit()
- if user_age:
-    break
- else:
-    print("Age cannot contain alphabets enter again")
-    continue
+    age = input("enter your age: ")
+    user_age = age.isdigit()
+    if user_age:
+        break
+    else:
+        print("Age cannot contain alphabets enter again")
+        continue
 
-if user_age<=18:
+if user_age <= 18:
     pass
 else:
     print("You are lesser than 18 so you cant use this application.QUITTTING......")
@@ -95,7 +94,6 @@ computer
 ''')
 ordered_things = input("select from above items")
 
-
 # delivery info
 
 print(ordered_things)
@@ -104,7 +102,3 @@ print("name: " + name)
 print("deliver to: " + address)
 print("free delivery: " + prime)
 print("your order will be deliverd soon thanks for being with us")
-
-
-
-
